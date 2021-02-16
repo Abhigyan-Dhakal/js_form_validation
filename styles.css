@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container {
+	background-color: rgb(235, 235, 235);
+	border-radius: 5px;
+	width: 400px;
+}
+
+.header {
+	background-color: #cecece;
+	border-radius: 5px;
+	padding: 20px 30px;
+}
+
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-item {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-item label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-item input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.form-item input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-item.success input {
+	border-color: #2ecc71;
+}
+
+.form-item.error input {
+	border-color: #e74c3c;
+}
+
+.form-item i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-item.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-item.error i.fa-exclamation-circle {
+	color: #db685b;
+	visibility: visible;
+}
+
+.form-item p {
+	color: #db685b;
+	visibility: hidden;
+}
+
+.form-item.error p {
+	visibility: visible;
+}
+
+.form button {
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	background-color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+.form button:active{
+	background-color: rgb(175, 175, 175);
+}
